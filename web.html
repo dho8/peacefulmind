@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <title>PeacefulMind</title>
+    <link rel="stylesheet" href="web.css">
+    <script defer src="web.js"></script>
+</head>
+<body>
+   
+   <div class="image-container">
+       
+        <img src="loogo.jpg" alt="logo" id="log">
+
+    </div>
+    <button class="home" style="vertical-align:middle"><span>Home</span></button>
+    <button class="abt" style="vertical-align:middle"><span>About Us</span></button>
+    <button class="get" style="vertical-align:middle"><span>Get Help Now</span></button>
+    
+    <p class ="title"></p>
+
+      
+    <ul>
+        
+        <li class="dropdown">
+            <a href="managing">Managing Stress</a>
+            <div class="dropdown-content">
+                <a href="#">consult a therapist</a>
+                <a href="#">Useful Hacks</a>
+                <a href="#">Meditation</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            
+            <a href="kids" class="dropbtn">Kids Mentalhealth</a>
+            <div class="dropdown-content">
+                <a href="#">ADHD</a>
+                <a href="#">Autism</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="self">Self-Improuvement</a>
+        
+            <div class="dropdown-content">
+                <a href="#">Daily Motivational Reminders</a>
+                <a href="#">Soft Skills</a>
+                <a href="#">Self-confidense</a>
+            </div>
+
+        </li>
+        <li class="dropdown">
+            <a href="aacc">Account</a>
+            <div class="dropdown-content">
+                <a href="#">Settings</a>
+                <a href="#">Log Out</a>
+                <a href="#">Switch Accounts</a>
+
+            </div>
+        </li>
+        
+    </ul>
+    <div class="image-container">
+        <ul class="image-list">
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+          <a href="web1.php"><img src="1.jpg" alt="sr" id="first"></a>
+          <a href="web2.php"><img src="2.jpg" alt="sre" id="second"></a>
+          <a href="web3.php"><img src="3.jpg" alt="srz" id="last"></a>
+        </ul>
+      </div>
+
+    <p><output id="result"></output></p></p>
+    <img src="chrono.jpg" alt="55555" id="chrono">
+    <div id="timer">00:00:00</div>
+    <div id="buttons">
+      <button onclick="startTimer()" class="chrono1">Start</button>
+      <button onclick="stopTimer()" class="chrono2">Stop</button>
+      
+    </div>
+    
+    <script>
+      let timer;
+      let seconds = 0;
+      let minutes = 0;
+      let hours = 0;
+    
+      function startTimer() {
+        timer = setInterval(updateTimer, 1000);
+      }
+    
+      function stopTimer() {
+        clearInterval(timer);
+      }
+    
+      function resetTimer() {
+        clearInterval(timer);
+        seconds = 0;
+        minutes = 0;
+        hours = 0;
+        updateDisplay();
+      }
+    
+      function updateTimer() {
+        seconds++;
+        if (seconds === 60) {
+          seconds = 0;
+          minutes++;
+          if (minutes === 60) {
+            minutes = 0;
+            hours++;
+          }
+        }
+        updateDisplay();
+      }
+    
+      function updateDisplay() {
+        const formattedTime = formatTime(hours) + ':' + formatTime(minutes) + ':' + formatTime(seconds);
+        document.getElementById('timer').innerText = formattedTime;
+      }
+    
+      function formatTime(value) {
+        return value < 10 ? '0' + value : value;
+      }
+    </script>
+    
+
+    <img src="keybo.jpg" alt="11" id="keybo">
+  
+
+    <div class="keyboard">
+        <div class="key">A</div>
+        <div class="key">B</div>
+        <div class="key">C</div>
+        <div class="key">D</div>
+        <div class="key">E</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">I</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">M</div>
+        <div class="key">N</div>
+        <div class="key">O</div>
+        <div class="key">Z</div>
+
+        
+    </div>
+    <img src="kbd.jpg" alt="22" id="kbd">
+    
+    
+    <div class="image-container">
+        <a href="peaceful mind\ADHD.jpeg" class="image-link">
+            <img src="ADHD.jpeg" alt="55" id="addict">
+        </a>
+        <a href="peaceful mind\anx.jpg" class="image-link">
+            <img src="anx.jpg" alt="44" id="anx">
+        </a>
+        <a href="peaceful mind\addiction.webp" class="image-link">
+            <img src="addiction.webp" alt="33" id="adhd">
+        </a>
+    </div>
+
+    <div class="adh">
+        <p>Addiction<br>nowadays</p>
+    </div>
+    <div class="anxt">
+        <p>Anxiety:<br>early signs<br>and advices</p>
+    </div>
+    <div class="addi">
+        <p>ADHD<br>symptoms,causes <br> and more</p>
+    </div>
+    <img src="locat.gif" alt="55" id="locat">
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    <img src="Peaceful.jpg" alt="5552" id="therapist">
+    <img src="club title.jpg" alt="kk" id="clubt">
+    <img src="club corps.jpg" alt="56" id="clubc">
+    <button class="club1" style="vertical-align:middle"><span>| Team building games</span></button>
+    <button class="club2" style="vertical-align:middle"><span>| Meditation</span></button>
+    <button class="club3" style="vertical-align:middle"><span>| Coffe talk</span></button>
+    <button class="club4" style="vertical-align:middle"><span>| Weekend's picnic </span></button>
+
+    <div class="signup-container">
+        <div class="signup-header">#InnerPeace Club</div>
+        <form class="signup-form">
+            <div class="form-group">
+                <label for="username">Full Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Mail-Adress</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Town | City</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Phone Number</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <button type="submit" class="signup-button">Confirm Joining The Club</button>
+        </form>
+    </div>
+    <img src="Support+group.jpg" alt="56" id="support">
+    <img src="fin.jpg" alt="20" id="fin">
+
+
+    
+
+
+  
+
+
+
+
+
+            
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    =
+
+    
+    
+    
+    
+        
+    
+      
+
+    
+</body>
+</html>
