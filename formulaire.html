@@ -1,0 +1,58 @@
+<form action="logiiin.php" method="post">
+    <div class="input_box"> 
+        <span class="icon"><img src="./image/mail.png" >    </span>
+        <input type="email" id="email" name="email" required>
+        <label>email</label>
+    </div>
+    <div class="input_box">
+        <span class="icon"><img src="./image/lock.png" ></span>  
+        <input type="password" id="password" name="password" required>
+        <label>mot de passe</label>   
+    </div>       
+    
+        <div class="remember_forgot">
+        <label><input type ="checkbox">se souvenir de moi </label><br>
+        <a href="#">Mot de passe oublié?</a>
+         </div>
+        <button type="submit" class="btn">login</button>
+        <div class="login_register">
+            <p>Peut modifier les données<a href="modification.html" class="">modifier</a></p>
+        </div>
+        <div class="login_register">
+            <p> vous n'avez pas un compte?<a href="#" class="register_link">s'inscrire</a> </p>
+        </div>
+</form>
+
+</div>
+<div class="form_box register">
+<h2>Inscription</h2>
+<form action="enregistreruser.php" method="post"> 
+    <div class="input_box"> 
+        <span class="icon"><img src="./image/user.png" >    </span>
+        <input type="text" id="nom" name="nom" required>
+        <label>Nom d'utilisateur</label>
+    </div>
+    <div class="input_box"> 
+        <span class="icon"><img src="./image/mail.png" >    </span>
+        <input type="email" id="email" name="email" required>
+        <label>email</label>
+    </div>  
+    
+    <div class="input_box">
+        <span class="icon"><img src="./image/lock.png" ></span>  
+        <input type="password" id="password" name="password" required>
+        <label>mot de passe</label>   
+    </div>       
+    
+        <div class="remember_forgot">
+        <label><input type ="checkbox">J'ai accepté les termes & conditions</label>
+         </div>
+        <button type="submit" class="btn">s'inscrire</button>
+        <div class="login_register">
+            <p> j'ai déja un compte?<a href="#" class="login_link">login</a> </p>
+        </div>
+</form>
+
+</div>
+</div>
+<script src="cnx.js"></script>

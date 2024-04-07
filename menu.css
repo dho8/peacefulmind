@@ -1,0 +1,138 @@
+#backg{
+    width: 110%;
+    margin-left: -70px;
+    margin-top: -20px;
+}
+
+.club1 {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #d084e7;
+    border: none;
+    color: #2c2c2e;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 20%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: -550px;
+    
+    margin-left: 220px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+  .club1 span {
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .club1 span:after {
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 10px;
+    transition: 0.5s;
+    
+  }
+  
+  .club1:hover span {
+    padding-right: 25px;
+  }
+  
+  .club1:hover span:after {
+    opacity: 1;
+    right: 10;
+  }
+  .club2 {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #e99fff;
+    border: none;
+    color: #353434;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 12%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: -550px;
+    
+    margin-left: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+  .club2 span {
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .club2 span:after {
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 10px;
+    transition: 0.5s;
+    
+  }
+  
+  .club2:hover span {
+    padding-right: 25px;
+  }
+  
+  .club2:hover span:after {
+    opacity: 1;
+    right: 10;
+  }
+  .club3 {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #b65dd1;
+    border: none;
+    color: #353434;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 11%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: -550px;
+    
+    margin-left: 110px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  
+  .club3 span {
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .club3 span:after {
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 10px;
+    transition: 0.5s;
+    
+  }
+  
+  .club3:hover span {
+    padding-right: 25px;
+  }
+  
+  .club3:hover span:after {
+    opacity: 1;
+    right: 10;
+  }

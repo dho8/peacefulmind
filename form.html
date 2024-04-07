@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire d'inscription</title>
+  <style>
+    /* Styles pour le formulaire */
+    body {
+    background-image: url('sbitar.jpg');
+    background-size: cover;
+    
+    }
+    .form-container {
+      position:absolute;
+      top: 120px;
+      left: 400px;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+  
+    .form-group input[type="submit"] {
+      background-color: #9b4caf;
+      color: white;
+      cursor: pointer;
+    }
+  
+    /* Animations */
+    .form-container {
+      animation: slide-in 0.5s ease-out;
+    }
+  
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Formulaire d'inscription</h2>
+    <form>
+      <div class="form-group">
+        <label for="full-name">Nom complet :</label>
+        <input type="text" id="full-name" name="full-name" required>
+      </div>
+      <div class="form-group">
+        <label for="cin">CIN :</label>
+        <input type="text" id="cin" name="cin" required>
+      </div>
+      <div class="form-group">
+        <label for="date-of-birth">Date de naissance :</label>
+        <input type="date" id="date-of-birth" name="date-of-birth" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Envoyer">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+#fstphp {
+    width: 105%;
+    margin-top: -500px;
+    margin-left: -55PX;
+    margin-top: -20px;
+}
+header {
+  position:fixed;
+  top: 0;
+  width: 120%;
+  margin-left: -10px;
+  background-color: #ffffff; /* Set your desired background color */
+  box-shadow: 0 2px 4px rgb(252, 250, 250); /* Optional: Add a shadow effect */
+  z-index: 100; /* Ensure the header is above other content */
+  height: 50px;
+  margin-top: 0px;
+  
+}
+
+main {
+  margin-top: 80px; /* Adjust this value to match the height of your header */
+  /* Add any other necessary styles */
+}
+
+/* Style the navigation links */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 0px;
+  background-color: white;
+  margin-bottom: 5000px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f7efef; /* Set the link color */
+}
+
+#bck {
+  width: 99%;
+  margin-right: px;
+  
+  margin-top: -90px;
+}
+#log{
+  width:17%;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.home {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #79f3ac;
+  border: none;
+  color: #353434;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: -70px;
+  margin-left: 700px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.home span {
+  cursor:pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home span:after {
+  content:'\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 10px;
+  transition: 0.5s;
+  
+}
+
+.home:hover span {
+  padding-right: 25px;
+}
+
+.home:hover span:after {
+  opacity: 1;
+  right: 10;
+}
+
+
+.abt {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #fdfb84;
+  border: none;
+  color: #353434;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: -110px;
+  
+  margin-left: 1050px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.abt span {
+  cursor:pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.abt span:after {
+  content:'\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 10px;
+  transition: 0.5s;
+  
+}
+
+.abt:hover span {
+  padding-right: 25px;
+}
+
+.abt:hover span:after {
+  opacity: 1;
+  right: 10;
+}
+.get {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #b366e7;
+  border: none;
+  color: #1b1919;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: -145px;
+  margin-left: 825px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.get span {
+  cursor:pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.get span:after {
+  content:'\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 10px;
+  transition: 0.5s;
+  
+}
+
+.get:hover span {
+  padding-right: 25px;
+}
+
+.get:hover span:after {
+  opacity: 1;
+  right: 10;
+}
+
+h1{
+    text-align: center;
+    color:rgb(80, 85, 90);
+    margin-top: 15px;
+    margin-right: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
